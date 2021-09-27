@@ -12,7 +12,7 @@ _branch=master
 _gitname=$_basename
 pkgname=$_basename-git
 
-pkgver=0.3.r8.gaf14838
+pkgver=0.3.r21.g72ca529
 
 pkgrel=1
 pkgdesc="The Glacier file manager"
@@ -21,7 +21,7 @@ url="https://$_host/$_project/$_gitname#branch=$_branch"
 license=('BSD-3-Clause')
 depends=('qt5-glacier-app-git' 'nemo-qml-plugin-settings-git' 'nemo-qml-plugin-folderlistmodel-git')
 optdepends=()
-makedepends=('git' 'cmake')
+makedepends=('git' 'cmake' 'qt5-tools')
 provides=("${pkgname%-git}")
 conflicts=("${pkgname%-git}")
 source=("${pkgname}::git+${url}")
