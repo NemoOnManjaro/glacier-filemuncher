@@ -5,18 +5,18 @@
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
 pkgname=glacier-filemuncher
-pkgver=0.3.3
+pkgver=0.4
 pkgrel=1
 pkgdesc="The Glacier file manager"
 arch=('x86_64' 'aarch64')
 url="https://github.com/nemomobile-ux/glacier-filemuncher"
 license=('BSD-3-Clause')
-depends=('qt5-glacier-app>=0.9'
+depends=('qt6-glacier-app'
 	'nemo-qml-plugin-settings'
 	'nemo-qml-plugin-folderlistmodel')
-makedepends=('cmake' 'qt5-tools')
+makedepends=('cmake' 'qt6-tools')
 source=("${url}/archive/refs/tags/$pkgver.tar.gz")
-sha256sums=('c3c424955a7dcc241e2b3e624257197142162c45757e34036dab6c1a51d4334f')
+sha256sums=('97d60761cd87044819fd195ae6fb94d1b0a41f622296b2542190815237a0a69a')
 
 build() {
     cd $pkgname-$pkgver
